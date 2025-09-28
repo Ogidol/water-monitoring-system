@@ -20,7 +20,7 @@
     <meta name="author" content="Idris Ogundele Olawale" />
 
     <!-- PWA Manifest -->
-    <link rel="manifest" href="/src/public/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
 
     <!-- Theme Colors -->
     <meta name="theme-color" content="#3B82F6" />
@@ -238,7 +238,7 @@
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker
-            .register("/src/public/sw.js")
+            .register("/service-worker.js")
             .then((registration) => {
               console.log("SW registered: ", registration);
             })
