@@ -139,8 +139,8 @@ export default function SplashScreen({ onComplete }: SplashScreenProps) {
           >
             {/* Water Tank Icon */}
             <svg
-              width="48"
-              height="48"
+              width="38"
+              height="38"
               viewBox="0 0 48 48"
               className="text-cyan-600"
               style={{ filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.1))" }}

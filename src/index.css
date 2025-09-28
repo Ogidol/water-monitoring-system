@@ -289,7 +289,6 @@
   }
 
   img, svg, video, canvas, audio, iframe, embed, object {
-    vertical-align: middle;
     display: block;
   }
 
@@ -969,7 +968,7 @@
 
   .w-full {
     width: 100%;
-  }
+/  }
 
   .w-screen {
     width: 100vw;
@@ -2267,7 +2266,21 @@
   .select-none {
     -webkit-user-select: none;
     user-select: none;
+    user-select: none;
+    user-select: none;
+    user-select: none;
   }
+
+  @media (max-width: 480px) {
+  .chart-label {
+    font-size: 10px !important;
+    white-space: nowrap;
+  }
+  .chart-container {
+    overflow-x: auto !important;
+    padding-bottom: 8px !important;
+  }
+}
 
   .fade-in {
     --tw-enter-opacity: 0;
@@ -2959,6 +2972,7 @@ html {
 
 .glassmorphism {
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   background: #ffffff40;
   border: 1px solid #ffffff2e;
 }
